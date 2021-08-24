@@ -18,6 +18,9 @@ function ImageTab({ place }) {
                 <h4>{place.name}</h4>
                 <p>{place.description}</p>
             </div>
+            <button className="button">
+                Select
+            </button>
         </li>
     )
 }

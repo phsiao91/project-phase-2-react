@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
+import { NavLink } from 'react-router-dom'
 
 
 
-function Reviews(props) {
+function Login(props) {
 
     const [username, setUsername] = useState(" ")
     console.log("useState Username is: ", username)
@@ -18,6 +19,7 @@ function Reviews(props) {
 
     return(
         <>
+        
         <form onSubmit={handleSubmit} >
             {/* onSubmit={handleSubmit} */}
             <h1>Log-in </h1>
@@ -32,12 +34,13 @@ function Reviews(props) {
 
             <label htmlFor="password"> Password </label>
             <input type="text" id="password" />
-
+            <NavLink to="/image">
             <input type="submit" value="Enter" />
-
+            </NavLink>
         </form>
+        
         </>
     )
 }
 
-export default Reviews;
+export default Login;
