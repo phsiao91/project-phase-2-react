@@ -6,6 +6,7 @@ import NavBar from './NavBar';
 
 function ImageList (props) {
     console.log(props)
+    
 
     const mapPlaces = () => {
         let mappedPlaces = props.renderOnList.map(eachPlace => {
@@ -24,8 +25,13 @@ function ImageList (props) {
 
     return(
         <div>
+<<<<<<< HEAD
              <NavBar/>
+=======
+            <h2>Hi, {props.renderUser}!</h2>
+>>>>>>> Chelsea
             {mapPlaces()}
+            
         </div>
     )
 }
