@@ -6,7 +6,7 @@ import Login from './Login.js';
 import React, { useState, useEffect } from 'react';
 import ImageList from './ImageList'
 import Gallery from './Gallery';
-import NavBar from './NavBar.js';
+
 
 
 

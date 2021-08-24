@@ -25,11 +25,8 @@ function ImageList (props) {
 
     return(
         <div>
-<<<<<<< HEAD
              <NavBar/>
-=======
-            <h2>Hi, {props.renderUser}!</h2>
->>>>>>> Chelsea
+             <h2>Hi, {props.renderUser}</h2>
             {mapPlaces()}
             
         </div>
