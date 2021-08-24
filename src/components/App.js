@@ -13,7 +13,7 @@ import Gallery from './Gallery';
 
 function App() {
 
-  const [ reviews, setReviews] = useState([])
+  const [ loggedUser, setLoggedUser] = useState("")
   const [ destinations, setDestinations] = useState([])
 
   const getPlaces = () => {
@@ -28,10 +28,14 @@ function App() {
   useEffect(getPlaces, [])
 
 
-//   const handleForm=(newReview) => {
-//     console.log(newReview)
-// }
+  function handleUser(username) {
+    console.log("In App,", username )
+    setLoggedUser(`${username}`)
+    
+  
+  }
 
+  console.log("LoggedUser,", loggedUser)
   console.log(destinations)
 
 
@@ -45,11 +49,12 @@ function App() {
       <Route path="/image">
         <ImageList 
           renderOnList={destinations}
+          renderUser={loggedUser}
           />
       </Route>
       <Route path="/">
         <Login 
-        // addReview={handleForm}
+        addUser={handleUser}
         />
       </Route>
     </Switch>

@@ -5,6 +5,7 @@ import ImageTab from './ImageTab';
 
 function ImageList (props) {
     console.log(props)
+    
 
     const mapPlaces = () => {
         let mappedPlaces = props.renderOnList.map(eachPlace => {
@@ -23,7 +24,9 @@ function ImageList (props) {
 
     return(
         <div>
+            <h2>Hi, {props.renderUser}!</h2>
             {mapPlaces()}
+            
         </div>
     )
 }

@@ -9,12 +9,10 @@ function Login(props) {
     console.log("useState Username is: ", username)
 
 
-     const handleSubmit = (e) => {
-         e.preventDefault()
-        //props.addReview
-     }
-
-
+    function handleSubmit(e) {
+        e.preventDefault()
+        
+    }
 
 
     return(
@@ -35,7 +33,8 @@ function Login(props) {
             <label htmlFor="password"> Password </label>
             <input type="text" id="password" />
             <NavLink to="/image">
-            <input type="submit" value="Enter" />
+            <input type="submit" value="Enter" 
+            onClick={props.addUser(username)}/>
             </NavLink>
         </form>
         
