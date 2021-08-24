@@ -2,10 +2,10 @@
 // import './App.css';
 import NavBar from './NavBar';
 import { Route, Switch } from 'react-router-dom'
-import Reviews from './Reviews';
+import Login from './Login.js';
 import React, { useState, useEffect } from 'react';
 import ImageList from './ImageList'
-
+import Gallery from './Gallery';
 
 
 
@@ -39,15 +39,18 @@ function App() {
     <div>
       <NavBar/>
     <Switch>
-      {/* <Route>
-        <Reviews 
-        // addReview={handleForm}
-        />
-      </Route> */}
+      <Route path="/gallery">
+        <Gallery renderImages={destinations}/>
+      </Route>
       <Route path="/image">
         <ImageList 
           renderOnList={destinations}
           />
+      </Route>
+      <Route path="/">
+        <Login 
+        // addReview={handleForm}
+        />
       </Route>
     </Switch>
     </div>
