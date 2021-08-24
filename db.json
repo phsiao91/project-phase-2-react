@@ -1,0 +1,12 @@
+{
+
+    "countries": [
+        {
+            "id": 1,
+            "name": "France",
+            "image": "https://media.cntraveler.com/photos/608af3e75e7a9305842b0fe1/5:4/w_3800,h_3040,c_limit/Latest%20on%20Lockdowns%20Europe__France_GettyImages-1145422105.jpg",
+            "description": "France is famous for the Eiffel Tower in Paris and sweet-scented lavender fields in Provence. It's a well-known tourist destination that offers museums, art galleries and fine cuisine. France is also known for its varied landscapes, from the mountains in the Alps to the dazzling beaches of Marseille, Corsica and Nice."
+        }
+    ]
+
+}
