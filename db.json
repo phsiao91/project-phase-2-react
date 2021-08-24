@@ -9,14 +9,14 @@
         },
     
         {
-            "id": 1,
+            "id": 2,
             "name": "Thailand",
             "image": "https://www.orientalescape.com/images/thailand/attraction/cnx-inthanon01.jpg",
             "description": "Located in southern Asia it is known for great eats, martial arts, beaches, and many temples. Thailand also has many islands that are well known that have numerous resorts for tourists. Thailand is also a fantastic place for watersports and boat trips around the stunning islands."
         },
 
         {
-        "id": 1,
+        "id": 3,
         "name": "South Africa",
         "image": "https://www.caporasoandpartnerslawofficepanama.com/img/articles/south-africa.jpeg",
         "description": "Some of the most popular destinations include several national parks, such as the expansive Kruger National Park in the north of the country, the coastlines and beaches of the KwaZulu-Natal and Western Cape provinces, and the major cities like Cape Town, Johannesburg and Durban."

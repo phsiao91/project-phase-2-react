@@ -13,7 +13,7 @@ function NavBar() {
 
     return(
         <header>
-            <h1>You're Journey Awaits!!!</h1>
+            <h1>You're Journey Awaits!!! Let's go! </h1>
             
             
         </header>
