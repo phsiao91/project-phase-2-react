@@ -12,7 +12,7 @@ import React, { useState, useEffect } from 'react';
 
 function App() {
 
-  const [ reviews, setReviews] = useState([])
+  const [ reviews, setReviews] = useState( [] )
 
 
   const handleForm=(newReview) => {
