@@ -1,5 +1,6 @@
 import React from 'react'
 import GalleryTab from './GalleryTab'
+import NavBar from './NavBar';
 
 
 function Gallery (props) {
@@ -9,11 +10,14 @@ function Gallery (props) {
         let mappedImages = props.renderImages.map(eachImage =>{
             return(
                 <GalleryTab key = {eachImage.id}
-                        pic ={eachImage.image} />
+                        pic ={eachImage} />
             )
         })
         return mappedImages
+        
     }
+
+    
 
 
 
@@ -22,6 +26,7 @@ function Gallery (props) {
 
     return(
         <div>
+            <NavBar />
             
             {mapImages()}
         

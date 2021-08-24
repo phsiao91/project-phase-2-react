@@ -1,5 +1,6 @@
 import React from 'react';
 import ImageTab from './ImageTab';
+import NavBar from './NavBar';
 
 
 
@@ -23,6 +24,7 @@ function ImageList (props) {
 
     return(
         <div>
+             <NavBar/>
             {mapPlaces()}
         </div>
     )
