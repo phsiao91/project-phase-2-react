@@ -21,6 +21,28 @@
         "image": "https://www.caporasoandpartnerslawofficepanama.com/img/articles/south-africa.jpeg",
         "description": "Some of the most popular destinations include several national parks, such as the expansive Kruger National Park in the north of the country, the coastlines and beaches of the KwaZulu-Natal and Western Cape provinces, and the major cities like Cape Town, Johannesburg and Durban."
         }
-        ]
+        ],
+
+    "reviews": [
+        {
+            "id": 1,
+            "comment": "I always read articles here before any vacation abroad :) Whenever I google anything about some place, country, etc, breakFree is always on the first page of the results!"
+        },
+
+        {
+            "id": 2,
+            "comment": "breakFree is always a perfect travel companion for me. Been using the site for the last 3 years - love to contribute to the forum and love other experts' contributions."
+        },
+
+        {
+            "id": 3,
+            "comment": "I haven't had problems booking and reviewing through breakFree. Seems to work as expected and all is great."
+        },
+
+        {
+            "id": 4,
+            "comment": "I found breakFree to be very good for arranging my travel plans. They handled everything well and quickly gave my trip planning to Priceline who also was great in helping me extend my time for trip planning and trip final arrangements. Both companies helped me with trip planning and extensions with no trouble or confusion. All was handled very well and very professionally. Great job breakFree and great job Priceline."
+        }
+    ]
 
 }
