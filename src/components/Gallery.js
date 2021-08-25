@@ -1,5 +1,6 @@
 import React from 'react'
 import GalleryTab from './GalleryTab'
+import NavBar from './NavBar';
 
 
 function Gallery (props) {
@@ -13,7 +14,10 @@ function Gallery (props) {
             )
         })
         return mappedImages
+        
     }
+
+    
 
 
 
@@ -22,6 +26,7 @@ function Gallery (props) {
 
     return(
         <div>
+            <NavBar />
             
             {mapImages()}
         

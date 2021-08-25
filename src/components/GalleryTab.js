@@ -7,11 +7,12 @@ function GalleryTab ({pic}) {
 
 
     return(
-        <li className="card">
-            <div className="place-image">
-                <img src={pic.image} alt={pic.name}/>
-            </div>
-        </li>
+            
+            <li className="card">
+                <div className="place-image">
+                 <img src={pic.image} alt={pic.name}/>
+                </div>
+            </li>
     )
 
 }

@@ -1,11 +1,13 @@
 // import logo from './logo.svg';
 // import './App.css';
-import NavBar from './NavBar';
+
 import { Route, Switch } from 'react-router-dom'
 import Login from './Login.js';
 import React, { useState, useEffect } from 'react';
 import ImageList from './ImageList'
 import Gallery from './Gallery';
+import Reviews from './Reviews.js';
+
 
 
 
@@ -41,7 +43,7 @@ function App() {
 
   return (
     <div>
-      <NavBar/>
+     
     <Switch>
       <Route path="/gallery">
         <Gallery renderImages={destinations}/>
@@ -51,6 +53,10 @@ function App() {
           renderOnList={destinations}
           renderUser={loggedUser}
           />
+      </Route>
+      <Route path="/reviews">
+        <Reviews
+        />
       </Route>
       <Route path="/">
         <Login 
