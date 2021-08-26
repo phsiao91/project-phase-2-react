@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Redirect } from 'react-router-dom'
 
 
 
@@ -18,10 +18,11 @@ function Login(props) {
 
     return(
         <>
+        <h1 class="center">breakFree </h1>
         
         <form onSubmit={handleSubmit} >
             {/* onSubmit={handleSubmit} */}
-            <h1>Log-in </h1>
+            <h2>Log-in </h2>
             <label htmlFor="username"> Username </label>
             <input type="text" 
             id="username" 

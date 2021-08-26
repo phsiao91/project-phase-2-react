@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: lightskyblue;
 }
 
 code {
@@ -21,9 +22,11 @@ code {
 
 .place-image {
   position: relative;
+  
 }
 
 .button {
+  
   pointer-events: auto;
   cursor: pointer;
   background: #e7e7e7;
@@ -34,9 +37,61 @@ code {
   font-size: inherit;
   position: relative;
   display: inline-block;
+  background-color: lightgray;
+  /* border: 2px solid #4CAF50 */
+  
+}
+
+.button:hover {
+  background-color: grey;
+  color: white;
+}
+.buttonImg {
+  pointer-events: auto;
+  cursor: pointer;
+  background: #e7e7e7;
+  border: none;
+  padding: 1.5rem 3rem;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  position: relative;
+  display: inline-block;
+  background-color: lightgray;
+  border: 2px solid #4CAF50
+  
+}
+.buttonImg:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
 }
 
 .place-image img {
   width: 100%;
   max-width: 400px;
+  
+}
+
+
+.center{
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+}
+
+.revcontainer{
+  max-width: 600px;
+	margin: 20px auto;
+	background: white;	border-radius: 8px;
+	padding: 20px;
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+
 }
