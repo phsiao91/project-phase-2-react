@@ -16,7 +16,8 @@ function Itenerary (props) {
         })
         return mappedPlaces
     }
-
+    
+    
     return (
         <div>
             <NavBar />

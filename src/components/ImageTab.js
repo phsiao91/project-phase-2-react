@@ -1,14 +1,34 @@
 
-import React from 'react'
+import React, {useState} from 'react'
 
 
 function ImageTab({ place, selectPlace, }) {
+
+    const [ history, setHistory ] = useState( [] )
 
 
     const handleClick = () => {
         console.log(place.name)
         selectPlace(place)
+        postHistory(place)
     }
+
+    function postHistory(newHis){
+        fetch('http://localhost:3000/history', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(newHis)
+        })
+        .then (response => response.json())
+        .then(oneHis => { console.log(oneHis)
+        
+         setHistory([ ...history, oneHis ])
+        })
+        
+      }
+    
 
 
 

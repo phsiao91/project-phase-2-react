@@ -27,6 +27,9 @@ function NavBar() {
                 <NavLink className="button" to="./itenerary">
                     Itenerary
                 </NavLink>
+                <NavLink className="button" to="./history">
+                    History
+                </NavLink>
                 <NavLink className="button" to="./">
                     Logout
                 </NavLink>

@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 // import './App.css';
-
+import History from './History.js';
 import { Route, Switch } from 'react-router-dom'
 import Login from './Login.js';
 import React, { useState, useEffect } from 'react';
@@ -18,6 +18,7 @@ function App() {
   const [ loggedUser, setLoggedUser] = useState("")
   const [ destinations, setDestinations] = useState([])
   const [ itenerary, setItenerary ] = useState([])
+  const [ myHistory, setMyHistory ] = useState( [] )
 
   const [ gallPics, setGallPics] = useState( [] )
 
@@ -54,6 +55,21 @@ function App() {
 
 
   } , [] )
+
+  // FETCH History 
+  useEffect(() => {
+    fetch("http://localhost:3000/history")
+    .then(response => response.json())
+    .then(fetchedHis => {
+      console.log(fetchedHis)
+      setMyHistory(fetchedHis)
+
+
+    })
+
+
+  } , [] )
+
 
   //POST to Gallery
 
@@ -94,6 +110,22 @@ function App() {
       }
   }
 
+  // function postHistory(newHis){
+  //   fetch('http://localhost:3000/history', {
+  //     method: 'POST',
+  //     headers: {
+  //       'Content-Type': 'application/json'
+  //     },
+  //     body: JSON.stringify(newHis)
+  //   })
+  //   .then (response => response.json())
+  //   .then(oneHis => { console.log(oneHis)
+    
+  //    setHistory([ ...history, oneHis ])
+  //   })
+    
+  // }
+
 
   return (
     <div>
@@ -105,8 +137,12 @@ function App() {
         addImg={postImg}
         />
       </Route>
+      <Route path="/history">
+        <History renderMyHistory={myHistory}/>
+      </Route>
       <Route path="/itenerary">
-        <Itenerary renderOnItenerary={itenerary}/>
+        <Itenerary renderOnItenerary={itenerary}
+        />
       </Route>
       <Route path="/image">
         <ImageList 

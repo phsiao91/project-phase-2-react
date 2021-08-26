@@ -1,51 +1,82 @@
 {
-
-    "countries": [
-        {
-            "id": 1,
-            "name": "France",
-            "image": "https://media.cntraveler.com/photos/608af3e75e7a9305842b0fe1/5:4/w_3800,h_3040,c_limit/Latest%20on%20Lockdowns%20Europe__France_GettyImages-1145422105.jpg",
-            "price": 90,
-            "description": "France is famous for the Eiffel Tower in Paris and sweet-scented lavender fields in Provence. It's a well-known tourist destination that offers museums, art galleries and fine cuisine. France is also known for its varied landscapes, from the mountains in the Alps to the dazzling beaches of Marseille, Corsica and Nice."
-        },
-    
-        {
-            "id": 2,
-            "name": "Thailand",
-            "image": "https://www.orientalescape.com/images/thailand/attraction/cnx-inthanon01.jpg",
-            "price": 60,
-            "description": "Located in southern Asia it is known for great eats, martial arts, beaches, and many temples. Thailand also has many islands that are well known that have numerous resorts for tourists. Thailand is also a fantastic place for watersports and boat trips around the stunning islands."
-        },
-
-        {
-        "id": 3,
-        "name": "South Africa",
-        "image": "https://www.caporasoandpartnerslawofficepanama.com/img/articles/south-africa.jpeg",
-        "price": 75,
-        "description": "Some of the most popular destinations include several national parks, such as the expansive Kruger National Park in the north of the country, the coastlines and beaches of the KwaZulu-Natal and Western Cape provinces, and the major cities like Cape Town, Johannesburg and Durban."
-        }
-        ],
-
-    "reviews": [
-        {
-            "id": 1,
-            "comment": "I always read articles here before any vacation abroad :) Whenever I google anything about some place, country, etc, breakFree is always on the first page of the results!"
-        },
-
-        {
-            "id": 2,
-            "comment": "breakFree is always a perfect travel companion for me. Been using the site for the last 3 years - love to contribute to the forum and love other experts' contributions."
-        },
-
-        {
-            "id": 3,
-            "comment": "I haven't had problems booking and reviewing through breakFree. Seems to work as expected and all is great."
-        },
-
-        {
-            "id": 4,
-            "comment": "I found breakFree to be very good for arranging my travel plans. They handled everything well and quickly gave my trip planning to Priceline who also was great in helping me extend my time for trip planning and trip final arrangements. Both companies helped me with trip planning and extensions with no trouble or confusion. All was handled very well and very professionally. Great job breakFree and great job Priceline."
-        }
-    ]
-
+  "countries": [
+    {
+      "id": 1,
+      "name": "France",
+      "image": "https://media.cntraveler.com/photos/608af3e75e7a9305842b0fe1/5:4/w_3800,h_3040,c_limit/Latest%20on%20Lockdowns%20Europe__France_GettyImages-1145422105.jpg",
+      "price": 90,
+      "description": "France is famous for the Eiffel Tower in Paris and sweet-scented lavender fields in Provence. It's a well-known tourist destination that offers museums, art galleries and fine cuisine. France is also known for its varied landscapes, from the mountains in the Alps to the dazzling beaches of Marseille, Corsica and Nice."
+    },
+    {
+      "id": 2,
+      "name": "Thailand",
+      "image": "https://www.orientalescape.com/images/thailand/attraction/cnx-inthanon01.jpg",
+      "price": 60,
+      "description": "Located in southern Asia it is known for great eats, martial arts, beaches, and many temples. Thailand also has many islands that are well known that have numerous resorts for tourists. Thailand is also a fantastic place for watersports and boat trips around the stunning islands."
+    },
+    {
+      "id": 3,
+      "name": "South Africa",
+      "image": "https://www.caporasoandpartnerslawofficepanama.com/img/articles/south-africa.jpeg",
+      "price": 75,
+      "description": "Some of the most popular destinations include several national parks, such as the expansive Kruger National Park in the north of the country, the coastlines and beaches of the KwaZulu-Natal and Western Cape provinces, and the major cities like Cape Town, Johannesburg and Durban."
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "comment": "I always read articles here before any vacation abroad :) Whenever I google anything about some place, country, etc, breakFree is always on the first page of the results!"
+    },
+    {
+      "id": 2,
+      "comment": "breakFree is always a perfect travel companion for me. Been using the site for the last 3 years - love to contribute to the forum and love other experts' contributions."
+    },
+    {
+      "id": 3,
+      "comment": "I haven't had problems booking and reviewing through breakFree. Seems to work as expected and all is great."
+    },
+    {
+      "id": 4,
+      "comment": "I found breakFree to be very good for arranging my travel plans. They handled everything well and quickly gave my trip planning to Priceline who also was great in helping me extend my time for trip planning and trip final arrangements. Both companies helped me with trip planning and extensions with no trouble or confusion. All was handled very well and very professionally. Great job breakFree and great job Priceline."
+    }
+  ],
+  "gallery": [
+    {
+      "id": 1,
+      "image": "https://images.flytographer.com/41134256-8540-4653-98cd-0e700261cab6/paris-04-03-2019-birthday-20_1920.jpeg"
+    },
+    {
+      "id": 2,
+      "image": "https://exploremorefamilytravel.com/wp-content/uploads/2019/12/DSC03279.jpg"
+    },
+    {
+      "id": 3,
+      "image": "https://www.goway.com/media/cache/1a/3f/1a3fa5361a1bf396403c48af9105469f.jpg"
+    },
+    {
+      "id": 4,
+      "image": "https://www.frommers.com/system/media_items/attachments/000/866/648/s980/Eiffel_Tower_Paris_France.jpg?1613010378"
+    },
+    {
+      "image": "https://static.wikia.nocookie.net/pixar/images/9/94/Sid-Phillips.png/revision/latest/scale-to-width-down/250?cb=20200101194615",
+      "id": 5
+    },
+    {
+      "image": "https://www3.pictures.zimbio.com/gi/Real+Madrid+v+Borussia+Dortmund+UEFA+Champions+Cco8NeXpT3Tx.jpg",
+      "id": 6
+    },
+    {
+      "image": "https://www3.pictures.zimbio.com/gi/Real+Madrid+v+Borussia+Dortmund+UEFA+Champions+Cco8NeXpT3Tx.jpg",
+      "id": 7
+    }
+  ],
+  "history": [
+    {
+      "id": 1,
+      "name": "France",
+      "image": "https://media.cntraveler.com/photos/608af3e75e7a9305842b0fe1/5:4/w_3800,h_3040,c_limit/Latest%20on%20Lockdowns%20Europe__France_GettyImages-1145422105.jpg",
+      "price": 90,
+      "description": "France is famous for the Eiffel Tower in Paris and sweet-scented lavender fields in Provence. It's a well-known tourist destination that offers museums, art galleries and fine cuisine. France is also known for its varied landscapes, from the mountains in the Alps to the dazzling beaches of Marseille, Corsica and Nice."
+    }
+  ]
 }
