@@ -72,13 +72,16 @@ function Reviews() {
         <>
             <NavBar/>
 
+            <h2>Testimonials: </h2>
+
             {mapReviews()}
 
-            <form onSubmit={handleSubmit}>
-                <h1>Leave a Review for us! </h1>
+            <form onSubmit={handleSubmit} class="revcontainer">
+                <h1 class="center">Leave a Review for us! </h1>
                 <input 
                 type="text"
                 id="review" 
+                
                 placeholder="Enter your Review here!"/>
 
                 <input type="submit" value="Submit"/>

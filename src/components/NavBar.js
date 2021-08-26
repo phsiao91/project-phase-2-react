@@ -13,8 +13,8 @@ function NavBar() {
 
     return(
         <header>
-            <h1>You're Journey Awaits!!! Let's go! </h1>
-            <nav>
+            <h1>Your Journey Awaits...</h1>
+            <nav class="center">
                 <NavLink className="button" to="./image">
                     HomePage
                 </NavLink>
@@ -23,6 +23,9 @@ function NavBar() {
                 </NavLink>
                 <NavLink className="button" to="./reviews">
                     Reviews
+                </NavLink>
+                <NavLink className="button" to="./itenerary">
+                    Itinerary
                 </NavLink>
                 <NavLink className="button" to="./">
                     Logout

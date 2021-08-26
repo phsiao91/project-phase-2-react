@@ -10,7 +10,10 @@ function GalleryTab ({pic}) {
             
             <li className="card">
                 <div className="place-image">
-                 <img src={pic.image} alt={pic.name}/>
+                 <img src={pic.image} alt={pic.name}
+                 class="center"
+                 
+                 />
                 </div>
             </li>
     )

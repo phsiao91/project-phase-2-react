@@ -8,11 +8,17 @@ function ImageList (props) {
     console.log(props)
     
 
+    const alertApp = (place) => {
+        console.log(place)
+        props.renderPlace(place)
+    }
+
     const mapPlaces = () => {
         let mappedPlaces = props.renderOnList.map(eachPlace => {
             return (
                 <ImageTab key={eachPlace.id}
                           place={eachPlace}
+                          selectPlace={alertApp}
                     />
             )
         })

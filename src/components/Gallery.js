@@ -25,7 +25,8 @@ function Gallery (props) {
         let mappedImages = props.renderImages.map(eachImage =>{
             return(
                 <GalleryTab key = {eachImage.id}
-                        pic ={eachImage}/>
+                        pic ={eachImage}
+                        />
             )
         })
         return mappedImages
