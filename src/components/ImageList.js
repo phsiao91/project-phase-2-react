@@ -26,7 +26,7 @@ function ImageList (props) {
     return(
         <div>
              <NavBar/>
-             <h2>Hi, {props.renderUser}</h2>
+             <h2>Hi, {props.renderUser}!</h2>
             {mapPlaces()}
             
         </div>

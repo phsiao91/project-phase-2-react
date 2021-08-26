@@ -17,6 +17,7 @@ function App() {
 
   const [ loggedUser, setLoggedUser] = useState("")
   const [ destinations, setDestinations] = useState([])
+  const [ gallPics, setGallPics] = useState( [] )
 
   const getPlaces = () => {
     fetch(" http://localhost:3000/countries")
@@ -37,8 +38,44 @@ function App() {
   
   }
 
+  ///// Fetch Gallery pics 
+
+  useEffect(() => {
+    fetch("http://localhost:3000/gallery")
+    .then(response => response.json())
+    .then(fetchedImg => {
+      console.log(fetchedImg)
+      setGallPics(fetchedImg)
+
+
+    })
+
+
+  } , [] )
+
+  //POST to Gallery
+
+  function postImg(newImg){
+    fetch('http://localhost:3000/gallery', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(newImg)
+    })
+    .then (response => response.json())
+    .then(oneImg => { console.log(oneImg)
+    
+     setGallPics([...gallPics, oneImg])
+    })
+    
+  }
+
+
+
   console.log("LoggedUser,", loggedUser)
   console.log(destinations)
+  
 
 
   return (
@@ -46,7 +83,10 @@ function App() {
      
     <Switch>
       <Route path="/gallery">
-        <Gallery renderImages={destinations}/>
+        <Gallery 
+        renderImages={gallPics}
+        addImg={postImg}
+        />
       </Route>
       <Route path="/image">
         <ImageList 
