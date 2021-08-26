@@ -12,6 +12,7 @@ function Login(props) {
     function handleSubmit(e) {
         e.preventDefault()
         
+        
     }
 
 
@@ -31,7 +32,7 @@ function Login(props) {
             }}/>
 
             <label htmlFor="password"> Password </label>
-            <input type="text" id="password" />
+            <input type="password" id="password" />
             <NavLink to="/image">
             <input type="submit" value="Enter" 
             onClick={props.addUser(username)}/>

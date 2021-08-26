@@ -19,6 +19,8 @@ function App() {
   const [ destinations, setDestinations] = useState([])
   const [ itenerary, setItenerary ] = useState([])
 
+  const [ gallPics, setGallPics] = useState( [] )
+
   const getPlaces = () => {
     fetch(" http://localhost:3000/countries")
     .then(res => res.json())
@@ -38,8 +40,44 @@ function App() {
   
   }
 
+  ///// Fetch Gallery pics 
+
+  useEffect(() => {
+    fetch("http://localhost:3000/gallery")
+    .then(response => response.json())
+    .then(fetchedImg => {
+      console.log(fetchedImg)
+      setGallPics(fetchedImg)
+
+
+    })
+
+
+  } , [] )
+
+  //POST to Gallery
+
+  function postImg(newImg){
+    fetch('http://localhost:3000/gallery', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(newImg)
+    })
+    .then (response => response.json())
+    .then(oneImg => { console.log(oneImg)
+    
+     setGallPics([...gallPics, oneImg])
+    })
+    
+  }
+
+
+
   console.log("LoggedUser,", loggedUser)
   console.log(destinations)
+  
 
   const mapPlace = (place) => {
     console.log(place)
@@ -62,7 +100,10 @@ function App() {
      
     <Switch>
       <Route path="/gallery">
-        <Gallery renderImages={destinations}/>
+        <Gallery 
+        renderImages={gallPics}
+        addImg={postImg}
+        />
       </Route>
       <Route path="/itenerary">
         <Itenerary renderOnItenerary={itenerary}/>

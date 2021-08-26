@@ -18,6 +18,8 @@ function Reviews() {
     }
     useEffect(getReviews, [])
 
+
+
     const mapReviews = () => {
         let mappedReviews = reviews.map(eachReview =>{
             return(
@@ -31,13 +33,56 @@ function Reviews() {
 
 
 
+    function handleSubmit(e){
+        e.preventDefault()
+        console.log(e.target.review.value)
+        let newRev = {
+            
+            comment: e.target.review.value,
+            
+        }
+        e.target.reset()
+        // call post function 
 
+        postRev(newRev)
+        
+    }
+
+
+     //POST to Gallery
+
+  function postRev(newRev){
+    fetch('http://localhost:3000/reviews', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(newRev)
+    })
+    .then (response => response.json())
+    .then(oneRev => { console.log(oneRev)
+    
+     setReviews([...reviews, oneRev])
+    })
+    
+  }
 
 
     return (
         <>
             <NavBar/>
+
             {mapReviews()}
+
+            <form onSubmit={handleSubmit}>
+                <h1>Leave a Review for us! </h1>
+                <input 
+                type="text"
+                id="review" 
+                placeholder="Enter your Review here!"/>
+
+                <input type="submit" value="Submit"/>
+            </form>
         
         </>
 
