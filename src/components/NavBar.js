@@ -13,6 +13,9 @@ function NavBar() {
 
     return(
         <header>
+            <div className="header">
+            <img src="https://thumbs.dreamstime.com/b/web-banner-site-travel-agency-flat-design-top-view-vector-illustration-69680781.jpg" />
+            </div>
             <h1>Your Journey Awaits...</h1>
             <nav class="center">
                 <NavLink className="button" to="./image">

@@ -10,7 +10,7 @@ function ReviewTab ({ review }) {
 
     return(
         <ol>
-            <h4>{review.comment}</h4>
+            <h4>"{review.comment}"</h4>
         </ol>
     )
 }

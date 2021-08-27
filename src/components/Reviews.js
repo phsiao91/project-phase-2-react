@@ -75,10 +75,11 @@ function Reviews() {
             <h2>Testimonials: </h2>
 
             {mapReviews()}
+            
 
             <form onSubmit={handleSubmit} class="revcontainer">
                 <h1 class="center">Leave a Review for us! </h1>
-                <input 
+                <input className="review-field"
                 type="text"
                 id="review" 
                 
