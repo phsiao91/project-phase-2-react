@@ -20,6 +20,27 @@
       "image": "https://www.caporasoandpartnerslawofficepanama.com/img/articles/south-africa.jpeg",
       "price": 75,
       "description": "Some of the most popular destinations include several national parks, such as the expansive Kruger National Park in the north of the country, the coastlines and beaches of the KwaZulu-Natal and Western Cape provinces, and the major cities like Cape Town, Johannesburg and Durban."
+    },
+    {
+      "id": 4,
+      "name": "Japan",
+      "image": "https://cdn.cnn.com/cnnnext/dam/assets/170606121226-japan---travel-destination---shutterstock-230107657.jpg",
+      "price": 60,
+      "description": "Located in southern Asia it is known for great eats, martial arts, beaches, and many temples. Thailand also has many islands that are well known that have numerous resorts for tourists. Thailand is also a fantastic place for watersports and boat trips around the stunning islands."
+    },
+    {
+      "id": 5,
+      "name": "Spain",
+      "image": "https://www.expatica.com/app/uploads/sites/2/2018/06/ES-homepage-hero-e1575379738800.jpg",
+      "price": 60,
+      "description": "Located in southern Asia it is known for great eats, martial arts, beaches, and many temples. Thailand also has many islands that are well known that have numerous resorts for tourists. Thailand is also a fantastic place for watersports and boat trips around the stunning islands."
+    },
+    {
+      "id": 6,
+      "name": "Iceland",
+      "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F28%2F2019%2F11%2Fnorthern-lights-kirkjufell-mountain-snaefellsnes-iceland-ICELANDLIGHTS1218.jpg",
+      "price": 60,
+      "description": "Located in southern Asia it is known for great eats, martial arts, beaches, and many temples. Thailand also has many islands that are well known that have numerous resorts for tourists. Thailand is also a fantastic place for watersports and boat trips around the stunning islands."
     }
   ],
   "reviews": [
@@ -69,6 +90,13 @@
       "image": "https://media.cntraveler.com/photos/608af3e75e7a9305842b0fe1/5:4/w_3800,h_3040,c_limit/Latest%20on%20Lockdowns%20Europe__France_GettyImages-1145422105.jpg",
       "price": 90,
       "description": "France is famous for the Eiffel Tower in Paris and sweet-scented lavender fields in Provence. It's a well-known tourist destination that offers museums, art galleries and fine cuisine. France is also known for its varied landscapes, from the mountains in the Alps to the dazzling beaches of Marseille, Corsica and Nice."
+    },
+    {
+      "id": 2,
+      "name": "Thailand",
+      "image": "https://www.orientalescape.com/images/thailand/attraction/cnx-inthanon01.jpg",
+      "price": 60,
+      "description": "Located in southern Asia it is known for great eats, martial arts, beaches, and many temples. Thailand also has many islands that are well known that have numerous resorts for tourists. Thailand is also a fantastic place for watersports and boat trips around the stunning islands."
     }
   ]
 }

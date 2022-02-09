@@ -32,7 +32,8 @@ function ImageList (props) {
     return(
         <div>
              <NavBar/>
-             <h2>Welcome back!! {props.renderUser}</h2>
+             <h1>Welcome back!! {props.renderUser}</h1>
+             <h2 className='header2'>Your Journey Awaits...</h2>
             {mapPlaces()}
             
         </div>

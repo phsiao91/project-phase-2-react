@@ -36,7 +36,6 @@ code {
   position: relative;
   display: inline-block;
   background-color: lightgray;
-  /* border: 2px solid #4CAF50 */
 }
 
 .button:hover {
@@ -56,6 +55,8 @@ code {
   display: inline-block;
   background-color: lightgray;
   border: 2px solid #4caf50;
+  width: 50%;
+  margin-left: 27%;
 }
 .buttonImg:hover {
   background-color: #4caf50; /* Green */
@@ -124,7 +125,7 @@ h4 {
 }
 
 .header img {
-  width: 1400px;
+  width: 100%;
   height: 400px;
   background: #555;
 }
@@ -151,3 +152,9 @@ h4 {
 /* .login-page {
   background-image: url("https://previews.123rf.com/images/lexiclaus/lexiclaus1905/lexiclaus190500396/126718509-vector-seamless-pattern-with-london-attractions-in-cartoon-style-repeating-background-with-main-engl.jpg");
 } */
+
+.description {
+  width: 50%;
+  align-items: center;
+  margin-left: 27%;
+}
